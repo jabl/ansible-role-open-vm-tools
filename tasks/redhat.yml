@@ -1,0 +1,6 @@
+---
+- name: Install open-vm-tools
+  yum: name=open-vm-tools
+
+- name: Enable open-vm-tools service
+  service: name=vmtoolsd.service enabled=yes state=started
